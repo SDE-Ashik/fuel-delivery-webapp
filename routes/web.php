@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
         Route::get('pump/add','addPump')->name('addPump');
         Route::post('pump/save','savePump')->name('savePump');
         Route::get('pump/edit/{id}','editPump')->name('editPump');
+        Route::get('pump/delete/{id}','deletePump')->name('deletePump');
         Route::get('delivery_agent','deliveryAgents')->name('deliveryAgents');
         Route::get('delivery_agent/add','addAgent')->name('addAgent');
         Route::post('delivery_agent/save','saveAgent')->name('saveAgent');

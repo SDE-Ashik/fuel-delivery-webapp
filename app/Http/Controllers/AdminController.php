@@ -118,5 +118,9 @@ class AdminController extends Controller
         $config = Config::updateOrCreate(['id'=>1],$formData);
         return redirect(route('getConfig'));
     }
+    public function deletePump($pump_id)  {
+        $pump  = Pump::find($pump_id)->delete();
+        return redirect()->back();
+    }
 
 }

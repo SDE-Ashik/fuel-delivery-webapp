@@ -31,7 +31,7 @@ Admin Pump List
         <td>{{$pump->location}}</td>
         <td>{{$pump->pincode}}</td>
         <td> <a href="{{route('editPump',$pump->id)}}" class="btn btn-warning">Edit</a>
-          <a href="" class="btn btn-danger">Delete</a>
+          <a href="{{route('deletePump',$pump->id)}}" class="btn btn-danger">Delete</a>
         </td>
       </tr>
      @endforeach
